@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+html,
+body {
+	overscroll-behavior: none;
+}
+.root {
+	background-color: none;
+}
+.main {
+	scroll-snap-type: y mandatory;
+	height: 100vh;
+	overflow-y: scroll;
+}
+.section {
+	height: calc(100vh - 4rem);
+	width: 100vw;
+	scroll-snap-align: start;
+}
+#home {
+	height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.drawing {
+	height: 200px;
+	width: 200px;
+}
+#linework {
+	fill: none;
+	stroke: black;
+	stroke-width: 1;
+	animation: line 1.2s linear forwards;
+}
+#outline {
+	fill: none;
+	stroke: black;
+	stroke-width: 4;
+	animation: line 2s linear forwards;
+}
+#border {
+	fill: none;
+	stroke: white;
+	stroke-width: 4;
+}
+#body {
+	fill: white;
+}
+#background {
+	fill: white;
+}
+#linework,
+#outline {
+	stroke-dasharray: 1;
+	stroke-dashoffset: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@keyframes line {
+	from {
+		stroke-dashoffset: 1;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* #home {
+	background-color: #3c1642;
 }
 
-.App-link {
-  color: #61dafb;
+#about {
+	background-color: #004346;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#projects {
+	background-color: #6d72c3;
 }
+#skills {
+	background-color: #119da4;
+}
+#contact {
+	background-color: #f06543;
+} */

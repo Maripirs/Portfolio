@@ -18,62 +18,18 @@ body {
 #home {
 	height: 100vh;
 }
-
-.drawing {
-	height: 200px;
-	width: 200px;
-}
-#linework {
-	fill: none;
-	stroke: black;
-	stroke-width: 1;
-	animation: line 1.2s linear forwards;
-}
-#outline {
-	fill: none;
-	stroke: black;
-	stroke-width: 4;
-	animation: line 2s linear forwards;
-}
-#border {
-	fill: none;
-	stroke: white;
-	stroke-width: 4;
-}
-#body {
-	fill: white;
-}
-#background {
-	fill: white;
-}
-#linework,
-#outline {
-	stroke-dasharray: 1;
-	stroke-dashoffset: 1;
+.navbar {
+	background-color: rgba(0, 0, 0, 0.449);
 }
 
-@keyframes line {
-	from {
-		stroke-dashoffset: 1;
-	}
-	to {
-		stroke-dashoffset: 0;
-	}
+.section-title-wrap {
+	display: flex;
+	height: 3rem;
+	width: 100%;
+	align-items: end;
 }
 
-/* #home {
-	background-color: #3c1642;
+.section-title {
+	height: 2rem;
+	background-color: white;
 }
-
-#about {
-	background-color: #004346;
-}
-#projects {
-	background-color: #6d72c3;
-}
-#skills {
-	background-color: #119da4;
-}
-#contact {
-	background-color: #f06543;
-} */

@@ -11,8 +11,8 @@
 		hsl(229, 81%, 10%) 100%
 	);
 
-	background-size: 100% 400%;
-	animation: gradient 10s ease infinite alternate;
+	/* background-size: 100% 400%; */
+	/* animation: gradient 10s ease infinite alternate; */
 	height: 100vh;
 }
 .blob {

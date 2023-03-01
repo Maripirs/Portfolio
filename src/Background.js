@@ -19,7 +19,7 @@ const Background = () => {
 		);
 	};
 	return (
-		<div className="background">{[...Array(8)].map((e) => newblob())}</div>
+		<div className="background">{[...Array(0)].map((e) => newblob())}</div>
 	);
 };
 

@@ -1,0 +1,20 @@
+.selected {
+	position: absolute;
+	text-align: center;
+	z-index: -1;
+	width: 3.5rem;
+	height: 0.001;
+	transition: height 0.25s ease-in-out;
+}
+
+.hash-nav:hover .selected {
+	height: 0.2rem;
+	bottom: 0.5rem;
+}
+
+.hash-nav .active,
+.hash-nav:hover .active {
+	height: 3rem;
+	bottom: 0.5rem;
+	border-radius: 1rem;
+}
